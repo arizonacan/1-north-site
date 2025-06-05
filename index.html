@@ -8,9 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0b0b0b;
-      --accent: #bfa37c;
+      --bg: #1a1a1a;            /* Charcoal, not full black */
+      --header-bg: #232323;     /* Slightly brighter header */
+      --accent: #c8aa72;         /* Elegant gold tone */
       --text: #f4f4f4;
+      --muted: #bbbbbb;
       --font-header: 'Playfair Display', serif;
       --font-body: 'Montserrat', sans-serif;
     }
@@ -29,11 +31,11 @@
     }
 
     header {
+      background: var(--header-bg);
+      padding: 1.25rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.25rem 2rem;
-      background: #000;
       border-bottom: 1px solid var(--accent);
       position: sticky;
       top: 0;
@@ -66,7 +68,7 @@
 
     .hero {
       height: 100vh;
-      background: linear-gradient(rgba(11,11,11,0.7), rgba(11,11,11,0.7)),
+      background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)),
         url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
       display: flex;
       flex-direction: column;
@@ -86,12 +88,13 @@
       margin-top: 1rem;
       font-size: 1.2rem;
       max-width: 600px;
+      color: var(--muted);
     }
 
     .hero button {
       margin-top: 2rem;
       background: var(--accent);
-      color: #000;
+      color: #1a1a1a;
       border: none;
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
@@ -102,15 +105,15 @@
     }
 
     .hero button:hover {
-      background: #d6c39a;
+      background: #dfc28a;
     }
 
     footer {
-      background: #111;
+      background: #222;
       padding: 1.5rem;
       text-align: center;
       font-size: 0.9rem;
-      color: #aaa;
+      color: var(--muted);
     }
   </style>
 </head>
