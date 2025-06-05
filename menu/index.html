@@ -1,37 +1,179 @@
-<section id="menu">
-  <h2>Menu</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | 1 North</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #1c1c1c;
+      --section-bg: #262626;
+      --accent: #c8aa72;
+      --text: #f2f2f2;
+      --muted: #bbbbbb;
+      --font-header: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
 
-  <h3 style="color: var(--accent); margin-top: 2rem;">Starters</h3>
-  <ul class="menu">
-    <li><strong>Lobster Wontons</strong><br>Pan-fried, miso chili crisp broth – $24</li>
-    <li><strong>Calamari Fritti</strong><br>Lightly breaded, marinara & lemon aioli – $20</li>
-    <li><strong>Truffle Mac & Cheese</strong><br>Three-cheese blend, truffle oil – $18</li>
-  </ul>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <h3 style="color: var(--accent); margin-top: 2rem;">Steaks</h3>
-  <ul class="menu">
-    <li><strong>24 oz. Dry-Aged Ribeye</strong><br>28-day dry-aged prime beef, truffle mash, house steak sauce – $72</li>
-    <li><strong>16 oz. Bone-In NY Strip</strong><br>28-day dry-aged, roasted potatoes – $58</li>
-    <li><strong>10 oz. Filet Mignon</strong><br>Center cut, Béarnaise, creamed spinach – $62</li>
-  </ul>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+    }
 
-  <h3 style="color: var(--accent); margin-top: 2rem;">Burgers</h3>
-  <ul class="menu">
-    <li><strong>Birria Burger</strong><br>House-ground beef, oaxaca cheese, birria jus – $30</li>
-    <li><strong>Maple Bacon Burger</strong><br>Vermont cheddar, garlic aioli – $28</li>
-  </ul>
+    header, footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: var(--font-header);
+      color: var(--accent);
+    }
 
-  <h3 style="color: var(--accent); margin-top: 2rem;">Entrees</h3>
-  <ul class="menu">
-    <li><strong>Half Roasted Long Island Duck</strong><br>Orange glaze, garlic mash, broccolini – $42</li>
-    <li><strong>Faroe Island Salmon</strong><br>Teriyaki glaze, jasmine rice, grilled asparagus – $42</li>
-    <li><strong>Truffle Chicken</strong><br>Seared airline chicken breast, truffle demi – $38</li>
-  </ul>
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
 
-  <h3 style="color: var(--accent); margin-top: 2rem;">Sides</h3>
-  <ul class="menu">
-    <li><strong>Garlic Mashed Potatoes</strong><br>Creamy and rich – $9</li>
-    <li><strong>Grilled Asparagus</strong><br>With lemon and olive oil – $10</li>
-    <li><strong>Creamed Spinach</strong><br>Classic steakhouse side – $10</li>
-  </ul>
-</section>
+    header p {
+      font-family: var(--font-body);
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .menu-section {
+      background: var(--section-bg);
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    .menu-section h2 {
+      font-family: var(--font-header);
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 1rem 0;
+      border-bottom: 1px solid #333;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    strong {
+      font-size: 1.2rem;
+      color: var(--text);
+      display: block;
+    }
+
+    span {
+      font-size: 0.95rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .menu-section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>1 North Menu</h1>
+    <p>Premium Steaks • Seafood • Signature Sides</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Starters</h2>
+    <ul>
+      <li><strong>Lobster Wontons</strong><span>Pan-fried, miso chili crisp broth – $24</span></li>
+      <li><strong>Calamari Fritti</strong><span>Marinara & lemon aioli – $20</span></li>
+      <li><strong>Truffle Mac & Cheese</strong><span>Three-cheese blend, truffle oil – $18</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Steaks</h2>
+    <ul>
+      <li><strong>24 oz. Dry-Aged Ribeye</strong><span>28-day aged, truffle mash, house steak sauce – $72</span></li>
+      <li><strong>16 oz. NY Strip</strong><span>Roasted potatoes, herb butter – $58</span></li>
+      <li><strong>10 oz. Filet Mignon</strong><span>Béarnaise sauce, creamed spinach – $62</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Burgers</h2>
+    <ul>
+      <li><strong>Birria Burger</strong><span>Oaxaca cheese, house birria jus – $30</span></li>
+      <li><strong>Maple Bacon Burger</strong><span>Vermont cheddar, garlic aioli – $28</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Entrees</h2>
+    <ul>
+      <li><strong>Roasted Long Island Duck</strong><span>Orange glaze, broccolini – $42</span></li>
+      <li><strong>Faroe Island Salmon</strong><span>Teriyaki glaze, jasmine rice – $42</span></li>
+      <li><strong>Truffle Chicken</strong><span>Seared airline breast, truffle demi – $38</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Sides</h2>
+    <ul>
+      <li><strong>Garlic Mashed Potatoes</strong><span>– $9</span></li>
+      <li><strong>Grilled Asparagus</strong><span>– $10</span></li>
+      <li><strong>Creamed Spinach</strong><span>– $10</span></li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 1 North. Designed by Ocean Avenue Consulting.
+  </footer>
+
+</body>
+</html>
