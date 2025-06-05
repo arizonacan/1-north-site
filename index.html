@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1North - High-end steakhouse in Hampton Bays. USDA Prime steaks, seafood, and gourmet fare.">
-  <title>1North | Hampton Bays</title>
+  <meta name="description" content="1 North - High-end steakhouse in Hampton Bays. USDA Prime steaks, seafood, and gourmet fare.">
+  <title>1 North | Hampton Bays</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -96,6 +96,50 @@
       background: #d1b88d;
     }
 
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: var(--font-header);
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin-top: 1rem;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input, textarea {
+      background: #222;
+      color: var(--text);
+    }
+
+    button[type="submit"] {
+      background: var(--accent);
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
     footer {
       background: #111;
       text-align: center;
@@ -108,12 +152,13 @@
 
 <body>
   <header>
-    <div class="logo">1North</div>
+    <div class="logo">1 North</div>
     <nav>
       <ul>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#reservation">Book Table</a></li>
       </ul>
     </nav>
   </header>
@@ -124,8 +169,37 @@
     <button onclick="location.href='#menu'">Explore Our Menu</button>
   </section>
 
+  <section id="menu">
+    <h2>Menu</h2>
+    <p>Our menu features USDA Prime steaks, fresh seafood, and gourmet sides crafted to perfection.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Since 2009, 1 North has been a staple in Hampton Bays, known for exceptional service and an unforgettable dining experience.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Address: 322 W Montauk Hwy, Hampton Bays, NY 11946</p>
+    <p>Phone: <a href="tel:+16315943419" style="color: var(--accent); text-decoration: none;">(631) 594-3419</a></p>
+  </section>
+
+  <section id="reservation">
+    <h2>Book a Table</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="date" required>
+      <input type="time" required>
+      <textarea placeholder="Special Requests (Optional)"></textarea>
+      <button type="submit">Reserve</button>
+    </form>
+  </section>
+
   <footer>
-    &copy; 2025 1North. Designed by Ocean Avenue Consulting.
+    &copy; 2025 1 North. Designed by Ocean Avenue Consulting.
   </footer>
 </body>
 
