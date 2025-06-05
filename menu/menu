@@ -130,44 +130,71 @@
   <div class="menu-section">
     <h2>Starters</h2>
     <ul>
-      <li><strong>Lobster Wontons</strong><span>Pan-fried, miso chili crisp broth – $24</span></li>
-      <li><strong>Calamari Fritti</strong><span>Marinara & lemon aioli – $20</span></li>
-      <li><strong>Truffle Mac & Cheese</strong><span>Three-cheese blend, truffle oil – $18</span></li>
+      <li><strong>Local Oysters</strong><span>Half Shell or Rockefeller Style – $22</span></li>
+      <li><strong>Lobster Wontons</strong><span>Pan Fried, Miso Chili Crisp Broth – $24</span></li>
+      <li><strong>Tuna Poke Bowl</strong><span>Teriyaki Marinade, Mango, Beet, Avocado Puree – $20</span></li>
+      <li><strong>Bacon Wrapped Scallops</strong><span>Corn Salsa, Apricot Glaze – $22</span></li>
+      <li><strong>Sauteed Baby Clams</strong><span>White Wine, Basil & Garlic – $18</span></li>
+      <li><strong>Birria Tacos</strong><span>Oaxaca & Cotija Cheese, Dipping Jus – $18</span></li>
+      <li><strong>Burrata & Beef Caprese</strong><span>Grilled Heirloom Tomatoes, Truffle Oil – $20</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Soups & Salads</h2>
+    <ul>
+      <li><strong>Cream of Wild Mushroom</strong><span>Fresh Local Shiitake, Oyster & Cremini Mushrooms – $12</span></li>
+      <li><strong>Caesar Salad</strong><span>Garlic Croutons, Parmesan – $16</span></li>
+      <li><strong>Iceberg Wedge Salad</strong><span>Candied Bacon, Blue Cheese – $16</span></li>
+      <li><strong>House Salad</strong><span>Mixed Greens, Cherry Tomatoes – $13</span></li>
+      <li><strong>Wilted Baby Spinach</strong><span>Goat Cheese, Roasted Mushrooms – $16</span></li>
+      <li><strong>Basket of French Bread</strong><span>Pesto & Butter Chips – $6</span></li>
     </ul>
   </div>
 
   <div class="menu-section">
     <h2>Steaks</h2>
     <ul>
-      <li><strong>24 oz. Dry-Aged Ribeye</strong><span>28-day aged, truffle mash, house steak sauce – $72</span></li>
-      <li><strong>16 oz. NY Strip</strong><span>Roasted potatoes, herb butter – $58</span></li>
-      <li><strong>10 oz. Filet Mignon</strong><span>Béarnaise sauce, creamed spinach – $62</span></li>
+      <li><strong>12 oz. Strip Steak</strong><span>USDA Prime – $55</span></li>
+      <li><strong>10 oz. Filet Mignon</strong><span>USDA Prime – $67</span></li>
+      <li><strong>18 oz. Boneless Ribeye</strong><span>USDA Prime – $58</span></li>
+      <li><strong>16 oz. Bone-In NY Strip</strong><span>28 Day Dry-Aged – $64</span></li>
+      <li><strong>24 oz. Bone-In Ribeye</strong><span>28 Day Dry-Aged – $72</span></li>
+      <li><strong>24 oz. Porterhouse</strong><span>28 Day Dry-Aged – $72</span></li>
     </ul>
   </div>
 
   <div class="menu-section">
-    <h2>Burgers</h2>
+    <h2>Entrées</h2>
     <ul>
-      <li><strong>Birria Burger</strong><span>Oaxaca cheese, house birria jus – $30</span></li>
-      <li><strong>Maple Bacon Burger</strong><span>Vermont cheddar, garlic aioli – $28</span></li>
+      <li><strong>Shrimp Scampi</strong><span>Lemon Garlic Wine Sauce – $45</span></li>
+      <li><strong>Half Roasted Long Island Duck</strong><span>Cherry Port Wine Reduction – $42</span></li>
+      <li><strong>Pan Roasted Wild Faroe Island Salmon</strong><span>Caviar Beurre Blanc – $42</span></li>
+      <li><strong>Grilled Pork Chop Saltimbocca</strong><span>Prosciutto & Mozzarella, Garlic Mashed – $45</span></li>
+      <li><strong>Truffle Airline Chicken</strong><span>Wild Mushroom Demi Glace – $38</span></li>
     </ul>
   </div>
 
   <div class="menu-section">
-    <h2>Entrees</h2>
+    <h2>Steakhouse Burgers</h2>
     <ul>
-      <li><strong>Roasted Long Island Duck</strong><span>Orange glaze, broccolini – $42</span></li>
-      <li><strong>Faroe Island Salmon</strong><span>Teriyaki glaze, jasmine rice – $42</span></li>
-      <li><strong>Truffle Chicken</strong><span>Seared airline breast, truffle demi – $38</span></li>
+      <li><strong>Prime Beef Burger</strong><span>Cheese & Bacon, Fries – $25</span></li>
+      <li><strong>Birria Burger</strong><span>Smash Burger, Cotija, Onion Rings – $30</span></li>
+      <li><strong>Maple Bacon Burger</strong><span>Cashew Butter, Pretzel Bun – $30</span></li>
+      <li><strong>Smokehouse Burger</strong><span>Smoked Cheddar, Jalapeno Butter – $30</span></li>
     </ul>
   </div>
 
   <div class="menu-section">
     <h2>Sides</h2>
     <ul>
-      <li><strong>Garlic Mashed Potatoes</strong><span>– $9</span></li>
-      <li><strong>Grilled Asparagus</strong><span>– $10</span></li>
-      <li><strong>Creamed Spinach</strong><span>– $10</span></li>
+      <li><strong>Oven Roasted Potato</strong><span></span></li>
+      <li><strong>Garlic Mashed Potatoes</strong><span></span></li>
+      <li><strong>Twice Baked Potato</strong><span></span></li>
+      <li><strong>French Fries / Sweet Potato Fries</strong><span></span></li>
+      <li><strong>Creamed Spinach</strong><span></span></li>
+      <li><strong>Grilled Asparagus</strong><span></span></li>
+      <li><strong>Sauteed Bok Choy</strong><span></span></li>
     </ul>
   </div>
 
