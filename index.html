@@ -6,138 +6,47 @@
   <meta name="description" content="1 North – Hampton Bays' premier steakhouse. USDA Prime steaks and fine seafood." />
   <title>1 North | Hampton Bays</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #1a1a1a;            /* Charcoal, not full black */
-      --header-bg: #232323;     /* Slightly brighter header */
-      --accent: #c8aa72;         /* Elegant gold tone */
-      --text: #f4f4f4;
-      --muted: #bbbbbb;
-      --font-header: 'Playfair Display', serif;
-      --font-body: 'Montserrat', sans-serif;
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#1a1a1a',
+            header: '#232323',
+            accent: '#c8aa72',
+            muted: '#bbbbbb',
+          },
+          fontFamily: {
+            header: ['"Playfair Display"', 'serif'],
+            body: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--header-bg);
-      padding: 1.25rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--accent);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 2rem;
-      color: var(--accent);
-      font-family: var(--font-header);
-      letter-spacing: 1px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.75rem;
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)),
-        url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 2rem;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      font-family: var(--font-header);
-      color: var(--accent);
-    }
-
-    .hero p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      max-width: 600px;
-      color: var(--muted);
-    }
-
-    .hero button {
-      margin-top: 2rem;
-      background: var(--accent);
-      color: #1a1a1a;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background 0.3s;
-    }
-
-    .hero button:hover {
-      background: #dfc28a;
-    }
-
-    footer {
-      background: #222;
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-  </style>
+  </script>
 </head>
-<body>
+<body class="bg-bg text-white font-body">
 
-  <header>
-    <div class="logo">1 North</div>
+  <header class="bg-header sticky top-0 z-50 border-b border-accent p-5 flex justify-between items-center">
+    <div class="text-3xl text-accent font-header tracking-wide">1 North</div>
     <nav>
-      <ul>
-        <li><a href="menu/index.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="book.html">Book Table</a></li>
+      <ul class="flex gap-6 font-semibold">
+        <li><a href="/menu/" class="hover:text-accent transition">Menu</a></li>
+        <li><a href="/about/" class="hover:text-accent transition">About</a></li>
+        <li><a href="/contact/" class="hover:text-accent transition">Contact</a></li>
+        <li><a href="/book/" class="hover:text-accent transition">Book Table</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Refined Steaks. Elevated Dining.</h1>
-    <p>Welcome to 1 North – Hampton Bays' home for USDA Prime cuts, fresh seafood, and unforgettable nights.</p>
-    <button onclick="location.href='menu/index.html'">View Our Menu</button>
+  <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6" style="background-image: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');">
+    <h1 class="text-4xl md:text-6xl font-header text-accent">Refined Steaks. Elevated Dining.</h1>
+    <p class="mt-4 text-lg md:text-xl max-w-2xl text-muted">Welcome to 1 North – Hampton Bays' home for USDA Prime cuts, fresh seafood, and unforgettable nights.</p>
+    <button onclick="location.href='/menu/'" class="mt-8 bg-accent text-bg font-bold px-6 py-3 rounded hover:bg-yellow-300 transition">View Our Menu</button>
   </section>
 
-  <footer>
+  <footer class="bg-header text-muted text-center py-6 text-sm">
     &copy; 2025 1 North. Designed by Ocean Avenue Consulting.
   </footer>
 
