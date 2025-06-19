@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Table | 1 North</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #1c1c1c;
+      --section-bg: #262626;
+      --accent: #c8aa72;
+      --text: #f2f2f2;
+      --muted: #bbbbbb;
+      --font-header: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: var(--font-header);
+      color: var(--accent);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-family: var(--font-body);
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .nav-links {
+      margin-top: 1rem;
+    }
+
+    .nav-links a {
+      color: var(--accent);
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .content-section {
+      background: var(--section-bg);
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      animation: fadeInUp 0.6s ease both;
+      text-align: center;
+    }
+
+    .content-section h2 {
+      font-family: var(--font-header);
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .content-section p {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .book-btn {
+      background: var(--accent);
+      color: var(--bg);
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .book-btn:hover {
+      background: #e1c48e;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .content-section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Book a Table</h1>
+    <p>Reserve your experience at 1 North Steakhouse</p>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/menu/">Menu</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </header>
+
+  <div class="content-section">
+    <h2>Reserve Your Table</h2>
+    <p>We partner with OpenTable to make reservations simple and fast. Whether you're planning a date night, celebration, or weekend dinner — reserve your table in seconds.</p>
+    <a class="book-btn" href="https://www.opentable.com/1-north-steakhouse" target="_blank">Book on OpenTable</a>
+  </div>
+
+  <footer>
+    &copy; 2025 1 North. Designed by Ocean Avenue Consulting.
+  </footer>
+
+</body>
+</html>
