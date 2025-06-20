@@ -37,13 +37,10 @@
 </head>
 <body class="bg-bg text-white font-body">
 
-  <header class="bg-header sticky top-0 z-50 border-b border-accent p-5 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-    <div class="flex items-center gap-3">
-      <img src="https://popmenucloud.com/cdn-cgi/image/width=300,height=300,format=auto,fit=pad,background=transparent/thkyawxp/56476143-1274-4487-bac2-51dc46ec7b04.png" alt="1 North Logo" class="h-14 w-auto">
-      <p class="text-muted italic text-sm mt-1 hidden md:block">An innovative fresh twist on classic Hamptons taste!</p>
-    </div>
-    <nav class="mt-4 md:mt-0">
-      <ul class="flex gap-6 font-semibold flex-wrap justify-center md:justify-end">
+  <header class="bg-header sticky top-0 z-50 border-b border-accent p-5 flex justify-center">
+    <nav>
+      <ul class="flex gap-8 font-semibold flex-wrap justify-center text-sm md:text-base">
+        <li><a href="/" class="hover:text-accent transition">Home</a></li>
         <li><a href="/menu/" class="hover:text-accent transition">Menu</a></li>
         <li><a href="/about/" class="hover:text-accent transition">About</a></li>
         <li><a href="/contact/" class="hover:text-accent transition">Contact</a></li>
@@ -54,7 +51,8 @@
     </nav>
   </header>
 
-  <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6" style="background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url('https://www.thedailymeal.com/img/gallery/whats-the-most-expensive-cut-of-steak-you-can-buy/intro-1695995722.jpg');">
+  <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6 relative" style="background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url('https://www.thedailymeal.com/img/gallery/whats-the-most-expensive-cut-of-steak-you-can-buy/intro-1695995722.jpg');">
+    <img src="https://popmenucloud.com/cdn-cgi/image/width=300,height=300,format=auto,fit=pad,background=transparent/thkyawxp/56476143-1274-4487-bac2-51dc46ec7b04.png" alt="1 North Logo" class="w-32 md:w-48 mb-6 animate-fadeInUp">
     <h1 class="text-4xl md:text-6xl font-header text-accent drop-shadow-lg animate-fadeInUp">The Best Steaks in the Hamptons</h1>
     <p class="mt-4 text-lg md:text-xl max-w-2xl text-muted drop-shadow-md animate-fadeInUp">Join us at 1 North – a premier dining destination in Hampton Bays, serving USDA Prime cuts, fresh seafood, and handcrafted cocktails in a welcoming, elegant atmosphere.</p>
     <button onclick="location.href='/menu/'" class="mt-8 bg-accent text-bg font-bold px-6 py-3 rounded hover:bg-yellow-300 transition animate-fadeInUp">View Our Menu</button>
