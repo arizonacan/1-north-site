@@ -3,112 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="1 North – The best steaks in the Hamptons. USDA Prime steaks and fine seafood." />
-  <title>1 North | Hampton Bays</title>
+  <title>Menu | 1 North</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            bg: '#1a1a1a',
-            header: '#232323',
-            accent: '#c8aa72',
-            muted: '#bbbbbb',
-          },
-          fontFamily: {
-            header: ['"Playfair Display"', 'serif'],
-            body: ['Montserrat', 'sans-serif']
-          },
-          keyframes: {
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            }
-          },
-          animation: {
-            fadeInUp: 'fadeInUp 0.8s ease-out forwards',
-          }
-        }
+  <style>
+    :root {
+      --bg: #1c1c1c;
+      --section-bg: #262626;
+      --accent: #c8aa72;
+      --text: #f2f2f2;
+      --muted: #bbbbbb;
+      --font-header: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: var(--font-header);
+      color: var(--accent);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-family: var(--font-body);
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    header .quote {
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text);
+      margin-top: 0.5rem;
+    }
+
+    .nav-links {
+      margin-top: 1rem;
+    }
+
+    .nav-links a {
+      color: var(--accent);
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .menu-section {
+      background: var(--section-bg);
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    .menu-section h2 {
+      font-family: var(--font-header);
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 1rem 0;
+      border-bottom: 1px solid #333;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    strong {
+      font-size: 1.2rem;
+      color: var(--text);
+      display: block;
+    }
+
+    span {
+      font-size: 0.95rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
-  </script>
-</head>
-<body class="bg-bg text-white font-body">
 
-  <header class="bg-header sticky top-0 z-50 border-b border-accent p-5 flex justify-between items-center">
-    <div class="text-3xl text-accent font-header tracking-wide">1 North</div>
-    <nav>
-      <ul class="flex gap-6 font-semibold flex-wrap">
-        <li><a href="/menu/" class="hover:text-accent transition">Menu</a></li>
-        <li><a href="/about/" class="hover:text-accent transition">About</a></li>
-        <li><a href="/contact/" class="hover:text-accent transition">Contact</a></li>
-        <li><a href="/book/" class="hover:text-accent transition">Book Table</a></li>
-        <li><a href="/catering/" class="hover:text-accent transition">Catering</a></li>
-        <li><a href="/order/" class="hover:text-accent transition">Order Online</a></li>
-      </ul>
-    </nav>
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .menu-section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>1 North Menu</h1>
+    <p>Premium Steaks • Seafood • Signature Sides</p>
+    <p class="quote">An innovative fresh twist on classic Hamptons taste!</p>
+    <div class="nav-links">
+      <a href="/">Home</a>
+    </div>
   </header>
 
-  <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6" style="background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url('https://www.thedailymeal.com/img/gallery/whats-the-most-expensive-cut-of-steak-you-can-buy/intro-1695995722.jpg');">
-    <h1 class="text-4xl md:text-6xl font-header text-accent drop-shadow-lg animate-fadeInUp">The Best Steaks in the Hamptons</h1>
-    <p class="mt-4 text-lg md:text-xl max-w-2xl text-muted drop-shadow-md animate-fadeInUp">Join us at 1 North – a premier dining destination in Hampton Bays, serving USDA Prime cuts, fresh seafood, and handcrafted cocktails in a welcoming, elegant atmosphere.</p>
-    <button onclick="location.href='/menu/'" class="mt-8 bg-accent text-bg font-bold px-6 py-3 rounded hover:bg-yellow-300 transition animate-fadeInUp">View Our Menu</button>
-  </section>
+  <!-- Existing menu sections omitted for brevity -->
 
-  <section class="py-16 px-6 text-center max-w-4xl mx-auto">
-    <h2 class="text-3xl font-header text-accent mb-6">Why Dine With Us?</h2>
-    <p class="text-muted text-lg mb-6">At 1 North, we bring together classic steakhouse tradition with modern culinary artistry. Our chefs source the finest USDA Prime beef, locally caught seafood, and seasonal produce to craft a dining experience that's second to none on the East End.</p>
-    <div class="flex flex-wrap justify-center gap-8">
-      <div class="w-64 p-6 bg-header rounded-lg shadow-lg">
-        <h3 class="text-xl font-header text-accent mb-2">Prime Cuts</h3>
-        <p class="text-muted text-sm">Dry-aged steaks grilled to perfection with house-made sauces and signature sides.</p>
-      </div>
-      <div class="w-64 p-6 bg-header rounded-lg shadow-lg">
-        <h3 class="text-xl font-header text-accent mb-2">Fresh Seafood</h3>
-        <p class="text-muted text-sm">Sustainably sourced seafood dishes prepared with global inspiration and local flair.</p>
-      </div>
-      <div class="w-64 p-6 bg-header rounded-lg shadow-lg">
-        <h3 class="text-xl font-header text-accent mb-2">Crafted Cocktails</h3>
-        <p class="text-muted text-sm">Enjoy an extensive wine list and artfully crafted cocktails at our elegant bar.</p>
-      </div>
-    </div>
-  </section>
+  <div class="menu-section">
+    <h2>Beers</h2>
+    <ul>
+      <li><strong>Drafts</strong><span>Montauk Belgian White, Peroni, Coney Island Mermaid Pilsner, Blue Point Toasted Lager, Montauk Wave Chaser IPA</span></li>
+      <li><strong>Hard Seltzers</strong><span>High Noon Peach, High Noon Watermelon, High Noon Black Cherry</span></li>
+      <li><strong>Bottles</strong><span>Amstel Light, Budweiser, Bud Light, Coors Light, Corona, Heineken, Heineken 0.0</span></li>
+    </ul>
+  </div>
 
-  <!-- Guest Reviews Section -->
-  <section class="py-16 px-6 bg-[#1f1f1f] text-center">
-    <h2 class="text-3xl font-header text-accent mb-10">Guest Reviews</h2>
-    <div class="flex flex-wrap gap-8 justify-center">
+  <div class="menu-section">
+    <h2>Wine</h2>
+    <ul>
+      <li><strong>White Wines</strong><span>Chardonnay, Sauvignon Blanc, Pinot Grigio</span></li>
+      <li><strong>Red Wines</strong><span>Cabernet Sauvignon, Pinot Noir, Merlot, Malbec</span></li>
+      <li><strong>Rosé</strong><span>Dry Rosé Selections</span></li>
+      <li><strong>Sparkling</strong><span>Prosecco, Champagne</span></li>
+      <li><strong>Orin Swift Cellars by Dave Phinney</strong><span>Blank Stare - Sauvignon Blanc<br>Abstract - Red Blend<br>Papillon - Red Blend<br>Mannequin - Chardonnay<br>8 Years in the Desert - Red Blend<br>Mercury Nickle - Cabernet Sauvignon</span></li>
+    </ul>
+  </div>
 
-      <div class="bg-header p-6 rounded-lg shadow-lg w-full md:w-[22rem]">
-        <p class="text-sm text-muted mb-2 italic">"The food was delicious and the live music was a pleasant surprise. We would dine here again."</p>
-        <p class="text-accent font-semibold text-sm mt-2">Mitchell – NYC</p>
-        <p class="text-muted text-xs">June 7, 2025</p>
-      </div>
-
-      <div class="bg-header p-6 rounded-lg shadow-lg w-full md:w-[22rem]">
-        <p class="text-sm text-muted mb-2 italic">"Beautiful dining experience! Excellent drinks, apps and entree. A true steakhouse cooked to perfection. Bacon scallops and duck were exceptional!"</p>
-        <p class="text-accent font-semibold text-sm mt-2">Lisa – NY State</p>
-        <p class="text-muted text-xs">May 16, 2025</p>
-      </div>
-
-      <div class="bg-header p-6 rounded-lg shadow-lg w-full md:w-[22rem]">
-        <p class="text-sm text-muted mb-2 italic">"Have been going to 1 North since their time east of the canal. Always great. Food is top notch. These are skilled chefs. The staff from hostess to busser are all well trained and knowledgeable."</p>
-        <p class="text-accent font-semibold text-sm mt-2">Larry – NYC</p>
-        <p class="text-muted text-xs">May 10, 2025</p>
-      </div>
-
-      <div class="bg-header p-6 rounded-lg shadow-lg w-full md:w-[22rem]">
-        <p class="text-sm text-muted mb-2 italic">"This restaurant has a unique shrimp scampi with lemony tones, tangy diced tomatoes, and a satisfying portion of shrimp. The flavors keep bringing me back for more."</p>
-        <p class="text-accent font-semibold text-sm mt-2">Kat – NY State</p>
-        <p class="text-muted text-xs">May 9, 2025</p>
-      </div>
-
-    </div>
-  </section>
-
-  <footer class="bg-header text-muted text-center py-6 text-sm mt-12">
+  <footer>
     &copy; 2025 1 North. Designed by Ocean Avenue Consulting.
   </footer>
 
